@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./Rpsgame.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap">
+  </head>
+  <body>
+    <div class="m-content">
+      
+      <div class="board">
+        <div class="mainText">
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+
+        <div class="scores">
+          <div class="pcScore">
+            <h2>COMPUTER SCORE</h2>
+            <h1 id="c-score">0</h1>
+          </div>
+          <div class="myScore">
+            <h2>
+              YOUR <br />
+              SCORE
+            </h2>
+            <h1 id="p-score">0</h1>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="game">
+        <div class="stick stc1"></div>
+        <div class="stick stc2"></div>
+        <div class="stick stc3"></div>
+        <button class="game-btn" data-choice="paper">
+             <div class="option paper">
+                <img id="paper" src="./icons/icon-1.png" alt="Paper">
+             </div>
+        </button>
+        <button class="game" data-choice="scissors">
+            <div class="option scissors">
+                <img id="scissor" src="./icons/icon-2.png" alt="Scissors">
+            </div>
+        </button>
+        <button class="game" data-choice="rock">
+             <div class="option rock">
+                <img id="stone" src="./icons/icon-0.png" alt="Rock">
+             </div>
+        </button>
+      </div>
+
+      <div class="results">
+        <h4 class="result-texty">PC PICKED</h4>
+        <h4 class="result-textp">YOU PICKED</h4>
+        <h2 class="result-display" >YOU WON</h2>
+        <h3 class="against-pc">AGAINST PC</h3>
+        <button class="play-again">PLAY AGAIN</button>
+        <div class="outcome otcp"><img id="computer-picked" src="./icons/Stone.png" alt=""></div>
+        <div class="outcome otcy"><img id="player-picked" src="./icons/Paper.png" alt=""></div>
+      </div>
+
+      <div class="rule-chart" id="game-rules">
+        <button class="rmv-btn" id="btn-x">X</button>
+        <h2>Game Rules</h2>
+        <ul>
+            <li><img src="icons/Rectangle 5.jpg" alt="image"><p>Rock beats scissors, scissors beat paper, and paper beats rock.</p></li>
+            <li><img src="icons/Rectangle 5.jpg" alt="image"><p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p></li>
+            <li><img src="icons/Rectangle 5.jpg" alt="image"><p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p></li>
+            <li><img src="icons/Rectangle 5.jpg" alt="image"><p>If both players lay down the same hand, each player lays down another hand</p></li>
+        </ul>
+      </div>
+
+      <div class="celebrate">
+        <img class="cup" src="./icons/Cup.png" alt="Cup">
+        <img class="stars" src="./icons/Star-group.png" alt="Stars">
+        <h1 class="hurray">HURRAY!!</h1>
+        <h2 class="you-won">YOU WON THE GAME</h2>
+        <button class="play-again-alt">PLAY AGAIN</button>
+      </div>
+
+      <div class="opt-btn">
+        <div class="opt-r" id="rules">
+          <h4><button>RULES</button></h4>
+        </div>
+        <div class="opt-n" id="nxt">
+          <h4><button>NEXT</button></h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
